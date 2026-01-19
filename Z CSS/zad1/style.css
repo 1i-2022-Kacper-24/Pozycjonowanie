@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+}
+
+/* RODZIC */
+.game-area {
+    width: 600px;
+    height: 400px;
+    background-color: #ddd;
+    border: 5px solid #333;
+    border-radius: 10px;
+    
+    /* TU WSTAW position: relative w Kroku 2 */
+    position: relative;
+}
+
+/* CELOWNIK */
+.crosshair {
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border: 3px solid red;
+    border-radius: 50%;
+    
+    /* Dodatkowe linie celownika */
+    background-image: 
+        linear-gradient(to right, transparent 45%, red 45%, red 55%, transparent 55%),
+        linear-gradient(to bottom, transparent 45%, red 45%, red 55%, transparent 55%);
+        
+    /* TU WSTAW kod pozycjonowania w Kroku 3 i 4 */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* PUNKTACJA (BONUS) */
+.score-badge {
+    background-color: gold;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    
+    /* TU WSTAW kod pozycjonowania w Kroku 5 */
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}

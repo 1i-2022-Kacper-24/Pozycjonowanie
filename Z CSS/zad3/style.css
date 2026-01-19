@@ -1,0 +1,47 @@
+body {
+    background-color: #222;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.phone-screen {
+    background-color: white;
+    width: 300px;
+    height: 500px;
+    border-radius: 20px;
+    overflow-y: scroll; /* Ważne dla sticky! Symulujemy ekran telefonu */
+    border: 10px solid #444;
+    padding-bottom: 20px;
+}
+
+h1 {
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+    margin: 0;
+    background-color: #fff;
+}
+
+.letter-section {
+    /* Sekcja nie wymaga stylów, ale sticky działa w jej obrębie */
+}
+
+.letter-header {
+    background-color: #eee;
+    padding: 5px 15px;
+    font-weight: bold;
+    color: #555;
+    border-bottom: 1px solid #ccc;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    
+    /* TU WSTAW position: sticky i top: 0 */
+    position: sticky;
+    top: 0;
+}
+
+.contact {
+    padding: 10px 15px;
+    border-bottom: 1px solid #f0f0f0;
+}

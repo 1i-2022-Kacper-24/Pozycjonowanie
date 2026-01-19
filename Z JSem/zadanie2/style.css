@@ -1,0 +1,46 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: #ff9800;
+  padding: 40px;
+  text-align: center;
+  color: white;
+}
+
+nav {
+  background-color: #333;
+  padding: 15px;
+
+  /* Zadanie 1: Ustaw pozycję sticky i top: 0 */
+  position: sticky;
+  top: 0;
+
+  /* Zadanie 2: Upewnij się, że menu jest na wierzchu */
+  z-index: 100;
+
+  transition: background-color 0.3s; /* Płynna zmiana koloru */
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-right: 20px;
+  font-size: 18px;
+}
+
+/* Zadanie 3: Styl dla klasy .scrolled (którą doda JS) */
+nav.scrolled {
+  /* Np. zmień tło na czarne lub dodaj cień */
+  background-color: #000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+main {
+  padding: 20px;
+  font-size: 18px;
+  line-height: 1.6;
+  height: 2000px; /* Wymuszenie długości strony */
+}

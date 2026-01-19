@@ -1,0 +1,60 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+p {
+    margin-bottom: 50px; /* Duże odstępy, żeby strona była dłuższa */
+}
+
+/* PANEL BOCZNY */
+.social-sidebar {
+    background-color: #333;
+    padding: 10px;
+    border-radius: 5px 0 0 5px;
+    box-shadow: -2px 0 5px rgba(0,0,0,0.2);
+    width: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    color: white;
+    
+    /* TU WSTAW position: fixed i resztę kodu */
+    position: fixed;
+    right: -40px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: right 0.3s;
+}
+
+.social-sidebar:hover {
+       right: 0;
+   }
+
+.icon {
+    width: 40px;
+    height: 40px;
+    background-color: #555;
+    border-radius: 5px;
+    line-height: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.icon:hover {
+    background-color: #777;
+}
+
+.fb { background-color: #3b5998; }
+.ig { background-color: #e1306c; }
+.yt { background-color: #ff0000; }
